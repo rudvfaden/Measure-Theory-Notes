@@ -1,0 +1,1078 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"commenttitle",
+				"commenttitle	commenttitle"
+			],
+			[
+				"vsp",
+				"vspace{length}	latex-document"
+			],
+			[
+				"subse",
+				"subsection[short]{title}	latex-document"
+			],
+			[
+				"section",
+				"section	Section"
+			],
+			[
+				"usepa",
+				"usepackage{package}	latex-document"
+			],
+			[
+				"end",
+				"end{document}	draft2.tex"
+			],
+			[
+				"usep",
+				"usepackage{package}	latex-document"
+			],
+			[
+				"ltx",
+				"ltx root	LaTeXing Option Root File"
+			],
+			[
+				"insta",
+				"installed.packages"
+			],
+			[
+				"den",
+				"density"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "\\documentclass[english, 11pt, a4paper]{article}\n\\usepackage{notes}\n\n% Uncomment these for a different family of fonts\n% \\usepackage{cmbright}\n% \\renewcommand{\\sfdefault}{cmss}\n% \\renewcommand{\\familydefault}{\\sfdefault}\n\n\\newcommand{\\thiscoursecode}{[XXXX] (\\#\\#\\#)}\n\\newcommand{\\thiscoursename}{Mål og Integrale Teori}\n\\newcommand{\\thisprof}{Prof. Niels Richard Hansen}\n\\newcommand{\\me}{Rud Faden}\n\\newcommand{\\thisterm}{Blok 2}\n\\newcommand{\\website}{http://kurser.ku.dk}\n\n% Headers\n\\chead{\\thiscoursename\\ Course Notes}\n\\lhead{\\thisterm}\n\n\n%%--------------------------------------------------------------------------\n%% Title\n%%--------------------------------------------------------------------------\n\\newcommand{\\notefront} {\n  \\pagenumbering{roman}\n  \\begin{center}\n    \\textbf{\\Huge{\\noun{\\thiscoursename}}}{\\Huge \\par}\n    \\vspace{0.1em}\n    {\\noun \\thisprof} \\ $\\bullet$ \\ {\\noun \\thisterm} \\ $\\bullet$ \\ {\\noun {University of Copenhagen}} \\\\\n  \\end{center}\n}\n\n% Begin Document\n\\begin{document}\n\n  % Notes front\n  \\notefront\n  % Table of Contents and List of Figures\n  \\tocandfigures\n  % Abstract\n  \\doabstract{These notes are intended as a resource for myself; past, present, or future students of this course, and anyone interested in the material. The goal is to provide an end-to-end resource that covers all material discussed in the course displayed in an organized manner. If you spot any errors or would like to contribute, please contact me directly.}\n\n\\section{Chapter 1}\n\n%%--------------------------------------------------------------------------\n%% Pavings\n%%--------------------------------------------------------------------------\n\n\\subsection{Paving}\n\nAn arbitrary collection of subsets is a \\textbf{\\index{paving}paving}\n\n%%--------------------------------------------------------------------------\n%% Algebra\n%%--------------------------------------------------------------------------\n\n\\subsection{Algebra}\n\\begin{defn}\nA paving $\\mathbb{A}$ on a set $X$ is called an algebra\\index{algebra}\nif $X\\in\\mathbb{A}$ $A\\in\\mathbb{A}\\Rightarrow A^{c}\\in\\mathbb{A}$ $A,B\\in\\mathbb{A}\\Rightarrow A\\cup B\\in\\mathbb{A}$\n\\end{defn}\n\\begin{lem}\n\nIf $\\mathbb{A}$ is an algebra on $X$, then $\\emptyset\\in\\mathbb{A}$\\end{lem}\n\n\\begin{proof}\nWe know that $X$ itself is a member of $\\mathbb{A}$, and we know\nthat $\\mathbb{A}$ is is stable under formation of complements. But\nthe complements of $X$ is indeed $\\emptyset$.\n\\end{proof}\n\n\\begin{lem}\nIf $\\A$ is an algebra on $X$, is holds that\n\\[\nA,B\\in\\A\\Rightarrow A\\cap B\\in\\A\n\\]\n\\end{lem}\n\n\\begin{proof}\nTake $A$ and $B$ in $\\A$. As $\\A$ is stable under formation\nof complements, we see that $A^{c}$ and $B^{c}$ are two $\\A$-sets.\nAs $\\A$ is stable under formation of unions, we set that $A^{c}\\cup B^{c}\\in\\A$.\nIf we take the complement again, we see that\n\\[\nA\\cap B=(A^{c}\\cup B^{c})^{c}\\in\\A\n\\]\nusing \\index{de Morgan's law}de Morgan's law\n\\end{proof}\n\n\\begin{lem}\nIf $\\A$ is an algebra on $X$, it holds that\n\\[\nA,B\\in\\A\\Rightarrow A\\backslash B\\in\\A\n\\]\n\\end{lem}\n\n\\begin{proof}\nTake $A$ and $B$ in $\\A$. As $\\A$ is stable under the formation\nof complements, we see that $B^{c}$ is in a $\\A$-set. As $\\A$ is\nstable under the formation of intersections, we see that $A\\cap B^{c}\\in\\A$.\nPer definition of the set difference, we have that\n\\[\nA\\backslash B=A\\cap B^{c}\\in\\A\n\\]\n\\end{proof}\n\n\\begin{lem}\nIf $\\A$ is an algebra on $X$, and $A_{1},A_{2},\\dots A_{n}$ are\nsets in $\\A$, is holds that\n\\[\n\\bigcup_{i=1}^{n}A_{i}\\in\\A,\\:\\bigcap_{i=1}^{n}A_{i}\\in\\A\n\\]\n\\end{lem}\n\\begin{proof}\nFor $n=2$ the claim is included in the definitation of an algebra.\nIf the results is established for $n-1$ sets, we have\n\\[\n\\bigcup_{i=1}^{n}A_{i}=\\left(\\bigcup_{i=1}^{n-1}A_{i}\\right)\\cup A_{n}\\in\\A\n\\]\n\\end{proof}\n\n%%--------------------------------------------------------------------------\n%% Sigma Algebra\n%%--------------------------------------------------------------------------\n\n\\subsection{\\index{sigma-algebras@ \\texorpdfstring{$\\sigma$}-algebras} \\texorpdfstring{$\\sigma$}-algebras}\n\nThe concept of algebras does not work under under approximate schemes.\nTherefore we introduce $\\sigma$-algrebras.\n\\begin{defn}\nA paving $\\mathbb{E}$ on a set $X$ is called a $\\sigma$--algebra\nif\n\n$X\\in\\E$\n\n$A\\in\\E\\Rightarrow A^{c}\\in\\E$\n\n$A_{1},A_{2},\\dots\\in\\E\\Rightarrow\\bigcup_{i=1}^{\\infty}A_{i}\\in\\E$\n\nA measurable\\index{measurable} space is a pair $(X,\\E),$ consisting of the set $X$ and a $\\sigma$--algebra $\\E$ on $X$. We say that a subset $A\\subset X$ is $\\E$--measurable if $A\\in\\E$ \n\\end{defn}\n\\begin{lem}\nIf $\\E$ is an $\\sigma$--algebra on $X$, the it is also an algebra.\\end{lem}\n\\begin{proof}\nsee book page 11.\n\\end{proof}\n\n\\printindex{}\n\n\\end{document}\n",
+			"file": "root.tex",
+			"file_size": 4206,
+			"file_write_time": 130585663130000000,
+			"settings":
+			{
+				"buffer_size": 4707,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/rudfaden/Dropbox/PhD/Mål og Integrale Teori/MålOgIntegraleTeori.sublime-project",
+			"settings":
+			{
+				"buffer_size": 729,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/LaTeXing/LaTeX.sublime-build",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"cl",
+				"Build: Clean up Files"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"s la",
+				"Set Syntax: LaTeXing"
+			],
+			[
+				"se lat",
+				"Set Syntax: LaTeXing"
+			],
+			[
+				"git pu",
+				"Git: Pull"
+			],
+			[
+				"git p",
+				"Git: Pull"
+			],
+			[
+				"git remo ",
+				"Git: Remote"
+			],
+			[
+				"g p",
+				"Git: Pull"
+			],
+			[
+				"g push",
+				"Git: Push"
+			],
+			[
+				"gstat",
+				"Git: Status"
+			],
+			[
+				"git m",
+				"Git: Merge"
+			],
+			[
+				"git ",
+				"Git: Checkout"
+			],
+			[
+				"git b",
+				"Git: Checkout New Branch"
+			],
+			[
+				"git mer",
+				"Git: Merge"
+			],
+			[
+				"git bra",
+				"Legit: Branches"
+			],
+			[
+				"gpush",
+				"Git: Push"
+			],
+			[
+				"bran",
+				"Git: Checkout New Branch"
+			],
+			[
+				"g stat",
+				"Git: Status"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"rev",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"git remo",
+				"Git: Remote"
+			],
+			[
+				"git a",
+				"Git: Add Remote"
+			],
+			[
+				"git add",
+				"Git: Quick Add"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"git ini",
+				"Git: Init"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lyx ",
+				"LyX Math: Display Math"
+			],
+			[
+				"to",
+				"Toggle Comment"
+			],
+			[
+				"revie",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"revi",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"prew",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"prewi",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"packa up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"packagere",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"sublime ",
+				"Sublime Files: Open Navigator"
+			],
+			[
+				"sublime fi",
+				"Sublime Files: Open Navigator"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git bla",
+				"Git: Blame"
+			],
+			[
+				"color sc",
+				"Package Control: Discover Packages"
+			],
+			[
+				"Snippet: san",
+				"Snippet: Sans Serif Font Family Text"
+			],
+			[
+				"snippet ",
+				"Snippet: Sans Serif Font Family Text"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"t",
+				"Toggle Comment"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package s",
+				"Package Syncing: Push Settings"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"clean",
+				"Dictionaries: Set Language"
+			],
+			[
+				"phra",
+				"LaTeXing: Phrases Dictionary"
+			],
+			[
+				"phras",
+				"LaTeXing: Phrases Dictionary"
+			],
+			[
+				"ph",
+				"LaTeXing: Word to Phrases Dictionary"
+			],
+			[
+				"phraa",
+				"LaTeXing: Word to Phrases Dictionary"
+			],
+			[
+				"check s",
+				"LaTeXing: Check System"
+			],
+			[
+				"rever",
+				"Permute Lines: Reverse"
+			],
+			[
+				"perm",
+				"Permute Lines: Reverse"
+			],
+			[
+				"cle",
+				"Build: Clean up Files"
+			],
+			[
+				"clen",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"Snippet: tik",
+				"Snippet: TikZ Demo: Right triangles"
+			],
+			[
+				"set syn tik",
+				"Set Syntax: TikZ"
+			],
+			[
+				"p",
+				"Pandoc"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"user ",
+				"Preferences: Settings - User"
+			],
+			[
+				"synci",
+				"Package Syncing: Pull Settings"
+			],
+			[
+				"rebu",
+				"LaTeXing: Rebuild Cache"
+			],
+			[
+				"tik",
+				"LaTeXing: Toggle TikZ Live Preview"
+			],
+			[
+				"la",
+				"LaTeXing: Changelog"
+			],
+			[
+				"lat",
+				"LaTeXing: Changelog"
+			],
+			[
+				"Build: ",
+				"Build: Choose Quick Build"
+			],
+			[
+				"tog",
+				"Toggle Comment"
+			],
+			[
+				"Snippet: comm",
+				"Snippet: latex-comment"
+			],
+			[
+				"clean ",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"Snippet: bea",
+				"Snippet: New Beamer"
+			],
+			[
+				"on",
+				"LaTeXing: Online Lookup"
+			],
+			[
+				"lin",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"linter li",
+				"SublimeLinter: Report (Open Files)"
+			],
+			[
+				"remo tr",
+				"Whitespace: Remove Trailing Whitespace"
+			],
+			[
+				"Snippet: sub",
+				"Snippet: Sub Section"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: sec",
+				"Snippet: Sub Section"
+			],
+			[
+				"too",
+				"Toggle Comment"
+			],
+			[
+				"too c",
+				"Toggle Comment"
+			],
+			[
+				"too co",
+				"Toggle Block Comment"
+			],
+			[
+				"Snippet: confi",
+				"Snippet: configure"
+			],
+			[
+				"se la",
+				"Set Syntax: LaTeXing"
+			],
+			[
+				"prefere latex",
+				"Preferences: LaTeXing Settings - User"
+			],
+			[
+				"Snippet: fi",
+				"Snippet: New figure"
+			],
+			[
+				"set sy tik",
+				"Set Syntax: TikZ"
+			],
+			[
+				"git bl",
+				"Git: Blame"
+			],
+			[
+				"sni",
+				"Snippet: chapter"
+			],
+			[
+				"set late",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"snip",
+				"Snippet: commenttitle"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"git add li",
+				"SublimeGit: Add License"
+			],
+			[
+				"git li",
+				"SublimeGit: Buy License"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git hel",
+				"Git: Help"
+			],
+			[
+				"git he",
+				"Git: Help"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"set s r",
+				"Set Syntax: R"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"stata",
+				"Set Syntax: Stata"
+			],
+			[
+				"pand",
+				"Pandoc: Render Markdown to PDF"
+			],
+			[
+				"set la",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"set mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"sy mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"pandoc",
+				"Pandoc"
+			],
+			[
+				"set",
+				"Set Syntax: Markdown"
+			],
+			[
+				"set mar",
+				"Set Syntax: Markdown"
+			]
+		],
+		"width": 754.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"view.run_command('math')",
+			"sublime.substr(point)",
+			"substr(point)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/rudfaden/Downloads/notes-template-master/coursenotes.tex",
+		"/Users/rudfaden/Dropbox/PhD/Mål og Integrale Teori/notes.sty",
+		"/Users/rudfaden/Dropbox/PhD/Mål og Integrale Teori/root.tex",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/LyxMath/Default (Windows).sublime-keymap",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/LyxMath/Default (Linux).sublime-keymap",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/LyxMath/Main.sublime-menu",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/LyxMath/README.md",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/LyxMath/LyxMath.py",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/LyxMath/Default (OSX).sublime-keymap",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/LaTeXing/LaTeXing.sublime-settings",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/LaTeXing/LaTeXing.py",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/LaTeXing/support/LaTeX (TikZ).sublime-settings",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/LaTeXing/latexing/bib.pyc",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/LaTeXing/latexing/cite.pyc",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/LyxMath/InlineMath.py",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/MathLatex/Default.sublime-commands",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/MathLatex/mathlatex.sublime-commands",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/LaTeXing/Default.sublime-commands",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/MathLatex/Main.sublime-menu",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/LaTeXing/Main.sublime-menu",
+		"/Users/rudfaden/Desktop/Default.zip Folder/duplicate_line.py",
+		"/Users/rudfaden/Desktop/Vintage.zip Folder/Default (OSX).sublime-keymap",
+		"/Users/rudfaden/Desktop/Default.zip Folder/Add Line.sublime-macro",
+		"/Users/rudfaden/Desktop/Vintage.zip Folder/vintage.py",
+		"/Users/rudfaden/Desktop/Default.zip Folder/goto_line.py",
+		"/Users/rudfaden/Desktop/Default.zip Folder/Delete Line.sublime-macro",
+		"/Users/rudfaden/Desktop/test.sublime-macro",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/latex-snippets/cTable.sublime-snippet",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/InsertDate/insert_date.py",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/MarkdownPreview.sublime-settings",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/Date/Time.sublime-workspace",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/Main/configure.tex",
+		"/Users/rudfaden/Dropbox/pandoc-convertion-syntax.md",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/Users/rudfaden/Dropbox/test.html",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/SublimeFiles.sublime-settings",
+		"/Users/rudfaden/Pictures/IMAG0078.jpg",
+		"/Users/rudfaden/Pictures/bryllup.psd",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/SublimeFiles/Default (OSX).sublime-keymap",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/SublimeFiles/SublimeFiles.sublime-settings",
+		"/Users/rudfaden/Downloads/test.php",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/fig/increasing-diff-proff.tikz",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/Main/draft2.tex",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/Main/classicthesis.sty",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/fig/t-transformation.tikz",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/Main/draft2.lyx",
+		"/home/rudfaden/.config/sublime-text-3/Packages/User/LaTeXing.sublime-settings",
+		"/home/rudfaden/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/rudfaden/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/rudfaden/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/rudfaden/.config/sublime-text-3/Packages/User/information-and-care.latexing-phrases",
+		"/home/rudfaden/.config/sublime-text-3/Packages/User/increasing difference.latexing-phrases",
+		"/home/rudfaden/Dropbox/Sites/githubblog/rudvfaden.github.com/_templates/archive",
+		"/home/rudfaden/Dropbox/Sites/githubblog/rudvfaden.github.com/_site/VIF in R/index.html",
+		"/home/rudfaden/Dropbox/Sites/githubblog/rudvfaden.github.com/posts/index.md",
+		"/home/rudfaden/.config/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/home/rudfaden/.config/sublime-text-3/Packages/LaTeXing/LaTeXing.sublime-settings",
+		"/home/rudfaden/Dropbox/PhD/information-and-care/fig/increasing-diff-proff.tikz",
+		"/home/rudfaden/Dropbox/PhD/information-and-care/Main/file.synctex (rud-HP's conflicted copy 2014-10-14).gz",
+		"/home/rudfaden/.config/sublime-text-3/Packages/LaTeXing/Default (Linux).sublime-keymap",
+		"/home/rudfaden/.config/sublime-text-3/Packages/User/Default.sublime-keymap",
+		"/home/rudfaden/Downloads/file.html",
+		"/home/rudfaden/Downloads/draft2.md",
+		"/home/rudfaden/.config/sublime-text-3/Packages/User/SmartMarkdown.sublime-settings",
+		"/home/rudfaden/Dropbox/PhD/information-and-care/Main/draft2.4tc",
+		"/home/rudfaden/Dropbox/PhD/information-and-care/Main/test.html",
+		"/home/rudfaden/Dropbox/PhD/pandoc-files/marked/kultiad-serif.css",
+		"/home/rudfaden/Dropbox/Programming/bash/bin/sublime_launch.sh",
+		"/home/rudfaden/Dropbox/Programming/bash/bin/mendeley_launch.sh",
+		"/home/rudfaden/Dropbox/Programming/bash/bin/chrome_launch.sh",
+		"/etc/init/shutdown.conf",
+		"/etc/init/network-manager.conf",
+		"/etc/init/upstart-socket-bridge.conf",
+		"/home/rudfaden/wmctrl",
+		"/home/rudfaden/1",
+		"/home/rudfaden/.config/sublime-text-3/Packages/User/Package Syncing.sublime-settings",
+		"/home/rudfaden/.config/sublime-text-3/Packages/LaTeXing/Default.sublime-keymap",
+		"/home/rudfaden/Dropbox/Programming/Sublime/Default (OSX).sublime-keymap",
+		"/home/rudfaden/Dropbox/Programming/SAS/DO_OVER.SAS",
+		"/home/rudfaden/Dropbox/PhD/information-and-care/fig/expectation.tikz",
+		"/home/rudfaden/Dropbox/PhD/information-and-care/fig/t-transformation.tikz",
+		"/home/rudfaden/Dropbox/PhD/information-and-care/Main/configure.tex",
+		"/home/rudfaden/Dropbox/LaTeXing.sublime-settings",
+		"/home/rudfaden/Dropbox/PhD/information-and-care/Main/Remote.bib",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/latex-snippets/commenttitle.sublime-snippet",
+		"/Users/rudfaden/Desktop/test/untitled.tex",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/fig/patient-utility.tikz",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/fig/expectation.tikz",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/Main/Remote.bib",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/information-and-care.sublime-project",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/fig/test-power.tikz",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/fig/utility.tex.preview.pdf",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/Main/draft2.pdf",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/Main/test.tex",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/latex-snippets/configure.sublime-snippet",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/latex-snippets/classicArticleTemplate.sublime-snippet",
+		"/Users/rudfaden/Desktop/test/configure.tex",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/latex-snippets/configure",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/fig/single-crossing-property.tikz",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/LaTeXing.sublime-settings",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/Main/.gitignore",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/fig/single-crossing.tex",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/draft2.tex",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/draft2.pdf",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/fig/test-power.tex",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/draft2 (rudfaden-HP-EliteBook-2570p's conflicted copy 2014-08-21).fdb_latexmk",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/.LSOverride",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/fig/t-transformation.aux",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/fig/test-power.pdf",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Default (OSX).sublime-keymap",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/fig/fig-expectation.tex.preview.pdf",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/fig/t-transformation.tex.preview.pdf",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/_region_.tex",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/draft2.lyx~",
+		"/Users/rudfaden/Dropbox/PhD/information-and-care/#draft2.tex#",
+		"/Users/rudfaden/Library/Application Support/Sublime Text 3/Packages/Stata Enhanced/Stata Enhanced (OSX).sublime-settings",
+		"/Users/rudfaden/Downloads/2014.csv",
+		"/Users/rudfaden/Dropbox/tale2.md",
+		"/Users/rudfaden/Dropbox/tale2"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"pdf",
+			"seta",
+			"super+m",
+			"super+shift+m",
+			"vi_move_by_characters_in_line",
+			"move",
+			"set_motion",
+			"end",
+			"table",
+			"ctable",
+			"journal",
+			"%%--------------------------------------------------------------------------",
+			"false",
+			"densityfunctions",
+			"tabs",
+			"ignoreChanged",
+			"change",
+			"ignore",
+			"mathcal",
+			"_\"",
+			"1",
+			"^1",
+			"epsilon",
+			"[\"`\"],",
+			"`",
+			"[\"`\"],",
+			"`",
+			"tab",
+			"9.1",
+			"pdf",
+			"okula",
+			"tikz",
+			"(\\/(?=\\d{2}[\\}\\/]))",
+			"l",
+			"fig/",
+			"fig",
+			"todo",
+			"persico",
+			"karlin",
+			"persico",
+			"Acquisition2000",
+			"fig/",
+			"*",
+			"folders",
+			"norm",
+			"substr"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "root.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4707,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								627,
+								627
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "latex",
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Low-Profile Gray (SL).tmTheme",
+							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 39.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/rudfaden/Dropbox/PhD/Mål og Integrale Teori/MålOgIntegraleTeori.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 729,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								83,
+								83
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": false,
+							"WordCountSyntax": "json",
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Low-Profile Gray (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-checkout":
+	{
+		"height": 98.0
+	},
+	"output.git-commit":
+	{
+		"height": 100.0
+	},
+	"output.git-init":
+	{
+		"height": 98.0
+	},
+	"output.git-merge":
+	{
+		"height": 98.0
+	},
+	"output.git-pull":
+	{
+		"height": 98.0
+	},
+	"output.git-push":
+	{
+		"height": 100.0
+	},
+	"output.markdown":
+	{
+		"height": 100.0
+	},
+	"project": "MålOgIntegraleTeori.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Main Folder/configure.tex"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Dropbox/PhD/information-and-care/information-and-care.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

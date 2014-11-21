@@ -1,0 +1,52 @@
+\documentclass[english, 11pt, a4paper]{article}
+\usepackage{notes}
+\makeindex
+% Uncomment these for a different family of fonts
+% \usepackage{cmbright}
+% \renewcommand{\sfdefault}{cmss}
+% \renewcommand{\familydefault}{\sfdefault}
+
+\newcommand{\thiscoursecode}{[XXXX] (\#\#\#)}
+\newcommand{\thiscoursename}{Mål og Integrale Teori}
+\newcommand{\thisprof}{Prof. Niels Richard Hansen}
+\newcommand{\me}{Rud Faden}
+\newcommand{\thisterm}{Blok 2}
+\newcommand{\website}{http://kurser.ku.dk}
+
+% Headers
+\chead{\thiscoursename \ Course Notes}
+\lhead{\thisterm}
+
+
+%%--------------------------------------------------------------------------
+%% Title
+%%--------------------------------------------------------------------------
+\newcommand{\notefront} {
+  \pagenumbering{roman}
+  \begin{center}
+    \textbf{\Huge{\noun{\thiscoursename}}}{\Huge \par}
+    \vspace{0.1em}
+    {\noun \thisprof} \ \(\bullet\)  \ {\noun \thisterm} \ \(\bullet\)  \ {\noun {University of Copenhagen}} \\
+  \end{center}
+}
+
+
+% Begin Document
+\begin{document}
+
+  % Notes front
+  \notefront
+  % Table of Contents and List of Figures
+  \tocandfigures
+  % Abstract
+  \doabstract{These notes are intended as a resource for myself; past, present, or future students of this course, and anyone interested in the material. The goal is to provide an end-to-end resource that covers all material discussed in the course displayed in an organized manner. If you spot any errors or would like to contribute, please contact me directly.}
+
+
+
+\input{lectures/fundamentals.tex}
+\input{lectures/lecture1.tex}
+\input{lectures/lecture2.tex}
+\input{lectures/lectur3.tex}
+\printindex
+
+\end{document}

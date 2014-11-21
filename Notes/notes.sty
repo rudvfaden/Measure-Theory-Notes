@@ -1,0 +1,165 @@
+%    These are the general settings for my Notes Template
+%    > I haven't organized them terribly much yet, however plan to soon.
+\RequirePackage{palatino}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{geometry}
+\RequirePackage{url}
+\RequirePackage{amsthm}
+\RequirePackage{mathrsfs}
+\RequirePackage{makeidx}
+\RequirePackage{microtype}
+\RequirePackage{setspace}
+\RequirePackage{graphicx}
+\RequirePackage{ulem}
+\RequirePackage{babel}
+\RequirePackage{fancyhdr}
+\RequirePackage{mathtools,amssymb}
+\RequirePackage{url}
+\RequirePackage{enumerate}
+\RequirePackage{tikz}
+\RequirePackage{listings}
+\RequirePackage{thmtools}
+\RequirePackage{enumitem}
+\setlist[enumerate]{label=(\arabic*)}
+\RequirePackage{
+nameref,%\nameref
+hyperref,%\autoref
+% n.b. \Autoref is defined by thmtools
+cleveref,% \cref
+% n.b. cleveref after! hyperref
+}
+\RequirePackage{eulervm}
+\RequirePackage{imakeidx}
+\RequirePackage{xstring}
+\RequirePackage{xcolor}
+\geometry{verbose,tmargin=1.0in,bmargin=1.0in,lmargin=1.0in,rmargin=1.0in}
+\pagestyle{fancy}
+\PassOptionsToPackage{normalem}{ulem}
+\makeindex
+\makeatletter
+
+\setlength{\headheight}{15pt}
+
+% Command for use \textsc quickly
+\newcommand{\noun}[1]{\textsc{#1}}
+
+% Numbering
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\RequirePackage{caption}
+\captionsetup{labelfont=bf,indention=0cm}
+\RequirePackage{hyperref}
+\hypersetup{
+colorlinks,
+citecolor=blue,
+filecolor=blue,
+linkcolor=blue,
+urlcolor=black
+}
+
+\newcommand{\tc}[1]{\texttt{#1}}
+\renewcommand{\baselinestretch}{1}
+
+% Tweaks
+\geometry{letterpaper}
+\renewcommand{\ps@plain}{\pagestyle{fancy}}
+\addto\captionsenglish{\renewcommand{\contentsname}{Table of Contents}}
+
+\makeatother
+\RequirePackage{babel}
+
+\newcommand{\tocandfigures}{
+\rule[0.5ex]{1\columnwidth}{1pt}
+Last Revision: \today
+\noindent \begin{flushleft}
+\makeatletter
+\makeatother
+\setcounter{page}{1}
+\setcounter{secnumdepth}{0} %Hide section number in header
+\end{flushleft}
+\noindent \begin{flushleft}
+\tableofcontents{}
+\par\end{flushleft}
+\noindent \begin{flushleft}
+\rule[0.5ex]{1\columnwidth}{1pt}
+\par\end{flushleft}
+\noindent \begin{flushleft}
+\newpage{}
+\par\end{flushleft}
+}
+\newcommand{\ub}[1]{\underbrace{#1}}
+\newcommand{\ubt}[2]{\) \underbrace{\mbox{#1}}_{\mbox{#2}}\) }
+\newcommand{\comb}[2]{{#1 \choose #2}}
+\newcommand{\doabstract}[1]{
+\sectionmark{Abstract}
+\begin{abstract}
+\noindent
+#1
+\end{abstract}
+\setcounter{secnumdepth}{2}
+\setcounter{page}{2}
+\pagenumbering{arabic}
+}
+
+
+
+\newcommand{\f}[2]{\frac{#1}{#2}}
+\newcommand{\B}{{\mathbb{B}}}
+\newcommand{\os}{{\mathbb{O}}}
+\newcommand{\A}{{\mathbb{A}}}
+\newcommand{\E}{{\mathbb{E}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\C}{{\mathbb{C}}}
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\D}{{\mathbb{D}}}
+\newcommand{\I}{{\mathbb{I}}}
+\newcommand{\K}{{\mathbb{K}}}
+\newcommand{\sH}{{\mathbb{H}}}
+\newcommand{\es}{{\mathbb{E}}}
+\newcommand{\pow}{{\mathbb{P}}}
+\newcommand{\Y}{{\mathcal{Y}}}
+
+\newcommand{\union}{\cup}
+\newcommand{\inter}{\cap}
+\newcommand{\nset}[1]{#1_1,\ldots,#1_n}
+\newcommand{\nseti}[1]{#1_1,,#1_2\ldots}
+\newcommand{\nsubset}[1]{#1_1 \subset \ldots \subset #1_n}
+\newcommand{\nsubseti}[1]{#1_1, #1_2 \subset \ldots}
+\newcommand{\setk}[2]{#1_1,\ldots,#1_#2}
+\newcommand{\bnset}[1]{\{#1_1,\ldots,#1_n\}}
+\newcommand{\bset}[2]{\{#1_1,\ldots,#1_#2\}}
+\newcommand{\ton}[1]{#1=1,\ldots,n}
+\newcommand{\tok}[2]{#1=1,\ldots,#2}
+\newcommand{\sigal}{\sigma-\text{algebra}}
+\newcommand{\X}{{\mathcal{X}}}
+% theorems, lemmas etc.
+\newcounter{dummy} \numberwithin{dummy}{section}
+\newtheorem{them}[dummy]{Theorem}
+\newtheorem{defn}[dummy]{Definition}
+\newtheorem{lem}[dummy]{Lemma}
+\newtheorem{exmp}[dummy]{Example}
+\newtheorem{rem}[dummy]{Remark}
+\newtheorem{prop}[dummy]{Prposition}
+\theoremstyle{definition}
+\newtheorem{cor}{Corollary}[dummy]
+\newtheorem*{note}{Note}
+\newtheorem{notation}{Notation}[dummy]
+\newtheorem{exercise}{Exercise}[dummy]
+\newtheorem*{solution}{Solution}
+
+\RequirePackage{color}
+\RequirePackage{listings}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{ivory}{rgb}{1.000000,1.000000,0.941176}
+
+\setlength\parindent{0pt}
+
+\newcommand{\important}[1]
+{\IfSubStr{#1}{!}
+    {{\textbf{\StrBefore{#1}{!}~\StrBehind{#1}{!}}}\index{#1}}
+    {{\textbf{#1}}\index{#1}\kern-1pt}
+}
