@@ -3,7 +3,7 @@
 	[
 		{
 			"follow_symlinks": true,
-			"path": "Maal og Integrale Teori",
+			"path": "../Maal og Integrale Teori",
 			"name": "Measure Theory",
 			"file_exclude_patterns":
 			[
