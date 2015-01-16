@@ -1,0 +1,39 @@
+% -*- root: ../root.tex -*-
+\section[Lecture 6]{Measure with density and Transformation of densitys} % (fold)
+\subsection{Measures with density} % (fold)
+\label{sub:measures_with_density}
+\begin{lem}
+Let \((\X,\E,\mu)\) be a measure space, and let \(f\in\M^+(\X\E)\). The set function \(\nu:\E \longrightarrow [0,\infty]\) defined by
+\begin{align}
+\nu(A)=\int_A f\dif \mu \label{eq:density}
+\end{align}
+is a measure on \(\X,\E\)
+\end{lem}
+\begin{rem}
+The measure in \cref{eq:density} ussually written as \(\nu=f\cdot \mu\) and is said to have \important{density} \(f\) wrt.\  \(\mu\)
+\end{rem}
+
+% subsection measures_with_density (end)
+\subsection{Transformation of densitys} % (fold)
+\label{sub:transformation_of_densitys}
+The problem of transforming variables with a measure. E.g. if a random variable has a density \(f\) and there is some transformation of \(X\), such that \(Y=h(X)\). How to we then find the density of \(Y\)?
+\label{sec:transformation_of_densitys}
+\begin{them}[Transformation of densities with random variables]
+ 	Let \(X\) be a real vauled stochastic variable, defined on a background space \((\Omega,\mathbb{F},P)\). Assume that the dsitributuion of \(X\) has a density \(f\) with respect to \(m\). Let \(h:\R \longrightarrow\R\) be a borel measurable map. If \(I\) and \(J\) are two open intervals, such that
+ 	\begin{enumerate}
+ 	  	\item \(h\) maps \(I\) bijectivly to \(J\)
+ 	  	\item \(h^{-1}\) is a \(C^1\)-map on \(J\)
+ 	  	\item \(P(X\in I)=1\)
+ 	\end{enumerate}
+ 	then the stochastic variable \(Y=h(X)\) has density \(\tilde{f}\) with respect to \(m\), where
+ 	\[
+ 		\tilde{f}=
+ 				\begin{cases}
+ 		    		f\left(h^{-1}(y)\right)\left|\left(h^{-1}\right)'(y)\right| &\text{for } y\in J \\
+ 		    		0 & \text{for } y\notin J
+ 				\end{cases}
+ 	\]
+\end{them}
+
+% subsection transformation_of_densitys (end)
+% section transformation_of_densitys (end)

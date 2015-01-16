@@ -1,0 +1,78 @@
+\message{ !name(Aflevering1.tex)}\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{MnSymbol}
+\usepackage[mathlf,textlf,minionint]{MinionPro}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+\usepackage[utf8]{inputenc}
+
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{
+\normalfont \normalsize
+\textsc{Mål og Integrale teori} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Aflevering 1 \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Rud Faden} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+\usepackage{hyperref}
+
+
+\begin{document}
+
+\message{ !name(Aflevering1.tex) !offset(-3) }
+
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+\section{Karakterisering af et mål}
+
+\paragraph{Spørgsmål 1}
+Lad \(f\) være en function fra \(\mathbb{R}^2-\mathbb{R}_+ \rightarrow \mathbb{R}\) defineret som
+\[
+	f(\|x\|_2,\omega(x))
+\]
+Normen \(\| x\| \) er altid kontinuer og da det er antaget at \(\omega\) også er kontinuer på \(\mathbb{R}^2\setminus(\{x_1,0\})\mid x_1 \geq 0\), da er \(f\) kontinuer. Vi skal nu vise at det inverse billedrum af \(f\)
+\[
+	f^{-1}(\|x\|_2,\omega(x))
+\]
+er lukket. Men \(f\) er kontinuer.  Og en funktion er kontinuer hvis og kun hvis det inverse billedrum af en afsluttet mængde er afsluttet. Heraf følger af at \(B\) er en afluttet mængde.
+
+\(\mathbb{D}\) er defineret som en delmængde af \(\mathbb{R}^2\). Da Borel algebraen på \(\mathbb{R}^2\) er \(\mathbb{B}_2\), da følger at \(\mathbb{D}\subset\mathbb{B}_2\)
+
+\paragraph{Spørgsmål 2} Lad \(I\) være et indekserings set. Lad
+\begin{align}
+	\bigcap_{i\in I} \mathcal{D}_i \label{eq:q2-1}
+\end{align}
+
+Definer et nyt set \(\mathbb{A}\) som mængden af elementer der ikke er bugsegmenter. Dvs. den tomme mængde eller mængden givet ved \(B(\theta,\eta,r,R)\left\{x\in\mathbb{R}^2\mid \omega(x)\notin [\theta,\eta], \| x\|_2 \notin [r,R]\right\}\), for \(0\leq\theta \leq \eta <2\pi\) og \(R\geq r>0\).
+
+	Da har vi at \(\mathbb{A}=\bigcup_{i\in I}A_i\) og at \(\mathbb{A}^c=\mathbb{D}\). Derved følger at \(\mathbb{A}^c=\left( \bigcup_{i\in I}A_i\right)^c=\bigcap_{i\in I}A_i^c=\bigcap_{i\in I}\mathcal{D}_i\)
+
+
+\end{document}
+\message{ !name(Aflevering1.tex) !offset(-78) }

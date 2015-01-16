@@ -1,5 +1,5 @@
 % -*- root: ../root.tex -*-
-\section{Lecture 2} % (fold)
+\section[Lecture 2]{The Uniquness  Thoerem} % (fold)
 \label{sec:lecture_2}
 
 \subsubsection*{The Uniqueness Theorem} % (fold)
@@ -152,7 +152,7 @@ Examine under what conditions a integral is measurable
 \begin{defn}\label{measurable_map}
 Lad \(\X,\E\) and \(\Y,\K\) be two measurable spaces, and let \(f:\X \rightarrow \Y\) be a map. We say that \(f\) is \important{measurable} if
 \[
-  f^{-1}(D)\in\E \text{ for all } B\in\K
+  f^{-1}(B)\in\E \text{ for all } B\in\K
 \]
 \end{defn}
 \begin{rem}
@@ -174,3 +174,11 @@ then \(f\) is \(\E-\K\)-measurable
 \subsection{Product measures} % (fold)
 \label{ssub:product_measures}
 Thw product of two finite measures \(\mu\otimes\upsilon\) is agian a measure. Especially: the product of two probability measures is agian a probability measure.
+
+\begin{them}
+Let \((\X,\E, \mu)\) and \(\Y,\K, \upsilon\) be \(\sigma\)-finite spaces. Then there is a unique measure \(\mu\otimes\upsilon\) on the product space \(\X\times\Y, \E\otimes\K\) satesfying that
+\[
+  \mu\otimes\upsilon(A\times B)=\mu(A)\upsilon(B)\quad A\in\E,B\in\K
+\]
+
+\end{them}

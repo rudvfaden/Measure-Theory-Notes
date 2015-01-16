@@ -1,4 +1,6 @@
-
+%    These are the general settings for my Notes Template
+%    > I haven't organized them terribly much yet, however plan to soon.
+\RequirePackage{palatino}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{geometry}
@@ -10,13 +12,13 @@
 \RequirePackage{setspace}
 \RequirePackage{graphicx}
 \RequirePackage{ulem}
+\RequirePackage{babel}
 \RequirePackage{fancyhdr}
 \RequirePackage{mathtools,amssymb}
 \RequirePackage{url}
 \RequirePackage{enumerate}
 \RequirePackage{tikz}
 \RequirePackage{listings}
-\RequirePackage{commath}
 \RequirePackage{thmtools}
 \RequirePackage{enumitem}
 \setlist[enumerate]{label=(\arabic*)}
@@ -32,7 +34,7 @@ cleveref,% \cref
 \RequirePackage{imakeidx}
 \RequirePackage{xstring}
 \RequirePackage{xcolor}
-\geometry{verbose,tmargin=1.0in,bmargin=1.0in,lmargin=1.0in,rmargin=1.0in}
+\geometry{verbose,tmargin=1in,bmargin=1.0in,lmargin=1.2in,rmargin=1.2in}
 \pagestyle{fancy}
 \PassOptionsToPackage{normalem}{ulem}
 \makeindex
@@ -43,9 +45,6 @@ cleveref,% \cref
 % Command for use \textsc quickly
 \newcommand{\noun}[1]{\textsc{#1}}
 
-% Numbering
-\numberwithin{equation}{section}
-\numberwithin{figure}{section}
 
 \RequirePackage{caption}
 \captionsetup{labelfont=bf,indention=0cm}
@@ -60,47 +59,6 @@ urlcolor=black
 
 \newcommand{\tc}[1]{\texttt{#1}}
 \renewcommand{\baselinestretch}{1}
-
-% Tweaks
-\geometry{a4paper}
-%\renewcommand{\ps@plain}{\pagestyle{fancy}}
-%\addto\captionsenglish{\renewcommand{\contentsname}{Table of Contents}}
-
-\makeatother
-\RequirePackage{babel}
-
-\newcommand{\tocandfigures}{
-\rule[0.5ex]{1\columnwidth}{1pt}
-Last Revision: \today
-\noindent \begin{flushleft}
-\makeatletter
-\makeatother
-\setcounter{page}{1}
-\setcounter{secnumdepth}{0} %Hide section number in header
-\end{flushleft}
-\noindent \begin{flushleft}
-\tableofcontents{}
-\par\end{flushleft}
-\noindent \begin{flushleft}
-\rule[0.5ex]{1\columnwidth}{1pt}
-\par\end{flushleft}
-\noindent \begin{flushleft}
-\newpage{}
-\par\end{flushleft}
-}
-\newcommand{\ub}[1]{\underbrace{#1}}
-\newcommand{\ubt}[2]{\) \underbrace{\mbox{#1}}_{\mbox{#2}}\) }
-\newcommand{\comb}[2]{{#1 \choose #2}}
-\newcommand{\doabstract}[1]{
-\sectionmark{Abstract}
-\begin{abstract}
-\noindent
-#1
-\end{abstract}
-\setcounter{secnumdepth}{2}
-\setcounter{page}{2}
-\pagenumbering{arabic}
-}
 
 
 
@@ -124,13 +82,12 @@ Last Revision: \today
 \newcommand{\M}{{\mathcal{M}}}
 \newcommand{\X}{{\mathcal{X}}}
 
-\newcommand{\indicator}[1]{\mathbbm{1}_{#1}}
 \newcommand{\union}{\cup}
 \newcommand{\inter}{\cap}
 \newcommand{\nset}[1]{#1_1,\ldots,#1_n}
 \newcommand{\nseti}[1]{#1_1,,#1_2\ldots}
 \newcommand{\nsubset}[1]{#1_1 \subset \ldots \subset #1_n}
-\newcommand{\nsubseti}[1]{#1_1\subset #1_2 \subset \ldots}
+\newcommand{\nsubseti}[1]{#1_1, #1_2 \subset \ldots}
 \newcommand{\setk}[2]{#1_1,\ldots,#1_#2}
 \newcommand{\bnset}[1]{\{#1_1,\ldots,#1_n\}}
 \newcommand{\bset}[2]{\{#1_1,\ldots,#1_#2\}}
@@ -138,7 +95,6 @@ Last Revision: \today
 \newcommand{\tok}[2]{#1=1,\ldots,#2}
 \newcommand{\sigal}{\sigma-\text{algebra}}
 \newcommand{\indep}{\perp \! \! \! \perp}
-\newcommand*\rfrac[2]{{}^{#1}\!/_{#2}}
 % theorems, lemmas etc.
 \newcounter{dummy} \numberwithin{dummy}{section}
 \newtheorem{them}[dummy]{Theorem}
@@ -151,8 +107,8 @@ Last Revision: \today
 \newtheorem{cor}{Corollary}[dummy]
 \newtheorem*{note}{Note}
 \newtheorem{notation}{Notation}[dummy]
-\newtheorem{problem}{Problem}[section]
-\newenvironment{solution}{\textit{Solution:}}
+\newtheorem{exercise}{Exercise}[dummy]
+\newtheorem*{solution}{Solution}
 
 \RequirePackage{color}
 \RequirePackage{listings}
@@ -165,18 +121,4 @@ Last Revision: \today
 {\IfSubStr{#1}{!}
     {{\textbf{\StrBefore{#1}{!}~\StrBehind{#1}{!}}}\index{#1}}
     {{\textbf{#1}}\index{#1}\kern-1pt}
-}
-% Expectation opepator
-\newcommand{\expect}{\operatorname{E}\expectarg}
-\DeclarePairedDelimiterX{\expectarg}[1]{(}{)}{%
-  \ifnum\currentgrouptype=16 \else\begingroup\fi
-  \activatebar#1
-  \ifnum\currentgrouptype=16 \else\endgroup\fi
-}
-
-\newcommand{\innermid}{\nonscript\;\delimsize\vert\nonscript\;}
-\newcommand{\activatebar}{%
-  \begingroup\lccode`\~=`\|
-  \lowercase{\endgroup\let~}\innermid
-  \mathcode`|=\string"8000
 }

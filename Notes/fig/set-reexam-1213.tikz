@@ -1,0 +1,16 @@
+% -*- root: ../root.tex -*-
+\begin{tikzpicture}
+	\draw[ultra thick,<->] (0,5.9)node[above]{\(y\)} -- (0,-5.9);
+	\draw[ultra thick,<->] (5.9,0)node[right]{\(x\)}--(-5.9,0);
+\draw [help lines] (-5.9,-5.9) grid (5.9,5.9);
+\draw (1,-6)-- (-6,1);
+\draw (-6,-1)-- (1,6);
+\draw (-1,6)-- (6,-1);
+\draw (6,1)-- (-1,-6);
+\fill (0,-5) circle[radius=2pt]node[xshift=-10pt,yshift=-10pt]{\((0,-1)\)} ;
+\fill (-5,0) circle[radius=2pt]node[xshift=-10pt,yshift=-10pt]{\((-1,0)\)} ;
+\fill (0,5) circle[radius=2pt]node[xshift=-10pt,yshift=-10pt]{\((0,1)\)} ;
+\fill (5,0) circle[radius=2pt]node[xshift=-10pt,yshift=-10pt]{\((1,0)\)} ;
+\fill[color=red,opacity=0.2] (0,-5)--(-5,0)--(0,5)--cycle ;
+\fill[color=blue,opacity=0.2] (0,5)--(5,0)--(0,-5)--cycle ;
+\end{tikzpicture}

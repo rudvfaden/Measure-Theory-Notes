@@ -1,0 +1,6 @@
+PWD /home/rudfaden/Dropbox/PhD/Maal og Integrale Teori/Notes/lectures
+INPUT /usr/local/texlive/2014/texmf.cnf
+INPUT /usr/local/texlive/2014/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2014/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /home/rudfaden/Dropbox/PhD/Maal og Integrale Teori/Notes/lectures/lecture10.tex
+OUTPUT /home/rudfaden/Dropbox/PhD/Maal og Integrale Teori/Notes/lectures/lecture10.log

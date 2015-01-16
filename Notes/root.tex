@@ -1,11 +1,24 @@
 \documentclass[english, 11pt, a4paper]{article}
 \usepackage{notes}
+\usepackage{booktabs}
+\usepackage{exercise}
+\usepackage{framed}
+\usepackage{tikz,pgfplots}
+\pgfplotsset{compat=1.11}
+\usepackage{amstext}    % defines the \text command, needed here
+\usepackage{bbm}        % for indeicator functions
+\usepackage{array}      % for advanced column specification: use >{\command} for
+                        % commands executed right before each column element
+                        % and <{\command} for commands to be executed right after
+                        % each column element
 \makeindex
+\allowdisplaybreaks
 % Uncomment these for a different family of fonts
 % \usepackage{cmbright}
 % \renewcommand{\sfdefault}{cmss}
 % \renewcommand{\familydefault}{\sfdefault}
-
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
 \newcommand{\thiscoursecode}{[XXXX] (\#\#\#)}
 \newcommand{\thiscoursename}{Mål og Integrale Teori}
 \newcommand{\thisprof}{Prof. Niels Richard Hansen}
@@ -41,12 +54,17 @@
   % Abstract
   \doabstract{These notes are intended as a resource for myself; past, present, or future students of this course, and anyone interested in the material. The goal is to provide an end-to-end resource that covers all material discussed in the course displayed in an organized manner. If you spot any errors or would like to contribute, please contact me directly.}
 
-
-
 \input{lectures/fundamentals.tex}
 \input{lectures/lecture1.tex}
 \input{lectures/lecture2.tex}
-\input{lectures/lectur3.tex}
+\input{lectures/lecture3.tex}
+\input{lectures/lecture4.tex}
+\input{lectures/lecture6.tex}
+\input{lectures/lecture7.tex}
+\input{lectures/lecture9.tex}
+\input{lectures/lecture10.tex}
+\input{lectures/lecture13.tex}
+\input{lectures/ExamsAndProblems.tex}
 \printindex
 
 \end{document}

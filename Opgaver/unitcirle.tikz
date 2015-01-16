@@ -1,0 +1,43 @@
+% -*- root: Aflevering2.tex -*-
+\begin{tikzpicture}[scale=3,cap=round]
+  % Local definitions
+  \def\costhirty{0.8660256}
+
+  % Colors
+  \colorlet{anglecolor}{green!50!black}
+  \colorlet{sincolor}{red}
+  \colorlet{tancolor}{orange!80!black}
+  \colorlet{coscolor}{blue}
+
+  % Styles
+  \tikzstyle{axes}=[]
+  \tikzstyle{important line}=[very thick]
+  \tikzstyle{information text}=[rounded corners,fill=red!10,inner sep=1ex]
+
+  % The graphic
+  \draw[style=help lines,step=0.5cm,color=lightgray] (-1.4,-1.4) grid (1.4,1.4);
+
+  \draw (0,0) circle (1cm);
+
+  \begin{scope}[style=axes]
+    \draw[->] (-1.5,0) -- (1.5,0) node[right] {$x$};
+    \draw[->] (0,-1.5) -- (0,1.5) node[above] {$y$};
+
+
+  \end{scope}
+
+  \filldraw[fill=green!20,draw=anglecolor] (0,0) -- (3mm,0pt) arc(0:30:3mm);
+  \draw (15:2mm) node[anglecolor] {\(\theta\) };
+
+  \draw[style=important line,sincolor]
+    (30:1cm) -- node[left=1pt,fill=white] {\(r\sin \theta\) } +(0,-.5);
+
+  \draw[style=important line,coscolor]
+    (0,0) -- node[below=2pt,fill=white] {\(r\cos \theta\) } (\costhirty,0);
+
+  \draw[style=important line,tancolor]  (intersection of 0,0--30:1cm and 1,0--0.71,1) node[above,right]{\((r,\theta)\) } coordinate (t);
+
+  \draw (0,0) -- (t);
+
+
+\end{tikzpicture}

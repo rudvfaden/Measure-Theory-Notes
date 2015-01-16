@@ -1,0 +1,44 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Fundamentels}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Paving}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Algebra}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}{sigma-algebras}}{2}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Borel Sigma algebra}{2}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Important distributions}{2}{subsection.1.5}
+\contentsline {section}{\numberline {2}Lecture 1}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}lebesgue m\IeC {\r a}let}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Intergation with respect to a measure}{4}{subsection.2.2}
+\contentsline {section}{\numberline {3}Lecture 2}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Product Algebra}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Measurability of intergrals}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Measurable maps}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Product measures}{8}{subsection.3.4}
+\contentsline {section}{\numberline {4}Lecture 3}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Integration of a product measure}{8}{subsection.4.1}
+\contentsline {section}{\numberline {5}Lecture 4}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}Intergration with respect ot image measures}{8}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Translation invariance}{8}{subsection.5.2}
+\contentsline {section}{\numberline {6}Lecture 6}{9}{section.6}
+\contentsline {subsection}{\numberline {6.1}Measures with density}{9}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Transformation of densitys}{9}{subsection.6.2}
+\contentsline {section}{\numberline {7}Lecture 7}{9}{section.7}
+\contentsline {subsection}{\numberline {7.1}Expectations}{9}{subsection.7.1}
+\contentsline {section}{\numberline {8}Descriptive theory: Quantiles}{10}{section.8}
+\contentsline {section}{\numberline {9}Lecture 10}{10}{section.9}
+\contentsline {subsection}{\numberline {9.1}Independence}{10}{subsection.9.1}
+\contentsline {section}{\numberline {10}Lecture 13}{10}{section.10}
+\contentsline {section}{\numberline {11}Exam 2012/2013}{10}{section.11}
+\contentsline {subsection}{\numberline {11.1}Problem 1}{10}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Problem 2}{11}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Problem 3}{13}{subsection.11.3}
+\contentsline {section}{\numberline {12}Problem 4}{14}{section.12}
+\contentsline {section}{\numberline {13}Reexam 2012/2013}{15}{section.13}
+\contentsline {subsection}{\numberline {13.1}Problem 1}{15}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.2}Problem 2}{16}{subsection.13.2}
+\contentsline {subsection}{\numberline {13.3}Problem 3}{17}{subsection.13.3}
+\contentsline {subsection}{\numberline {13.4}Problem 4}{17}{subsection.13.4}
+\contentsline {subsection}{\numberline {13.5}Problem 5}{20}{subsection.13.5}
+\contentsline {section}{\numberline {14}Exam 2013/2014}{21}{section.14}
+\contentsline {subsection}{\numberline {14.1}Problem 1}{21}{subsection.14.1}
+\contentsline {subsection}{\numberline {14.2}Problem 2}{22}{subsection.14.2}
+\contentsline {subsection}{\numberline {14.3}Problem 3}{23}{subsection.14.3}

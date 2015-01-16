@@ -1,0 +1,679 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=prv_Aflevering1 2014.12.21)  21 DEC 2014 09:59
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**&prv_Aflevering1 _region_.tex
+(./_region_.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+CUSTOMISED FORMAT. Preloaded files:
+        .
+scrartcl.cls    2013/12/19 v3.12 KOMA-Script document class (article)
+scrkbase.sty    2013/12/19 v3.12 KOMA-Script package (KOMA-Script-dependent bas
+ics and keyval usage)
+ scrbase.sty    2013/12/19 v3.12 KOMA-Script package (KOMA-Script-independent b
+asics and keyval usage)
+  keyval.sty    2014/10/28 v1.15 key=value parser (DPC)
+scrlfile.sty    2013/12/19 v3.12 KOMA-Script package (loading files)
+tocbasic.sty    2013/12/19 v3.12 KOMA-Script package (handling toc-files)
+scrsize11pt.clo    2013/12/19 v3.12 KOMA-Script font size class option (11pt)
+typearea.sty    2013/12/19 v3.12 KOMA-Script package (type area)
+ fontenc.sty
+   t1enc.def    2005/09/27 v1.99g Standard LaTeX file
+ fourier.sty    2005/01/01 1.4 fourier-GUTenberg package
+ fontenc.sty
+   t1enc.def    2005/09/27 v1.99g Standard LaTeX file
+textcomp.sty    2005/09/27 v1.99g Standard LaTeX package
+  ts1enc.def    2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+fourier-orns.sty    2004/01/30 1.1 fourier-ornaments package
+   babel.sty    2014/09/25 3.9l The Babel package
+ english.ldf    2012/08/20 v3.3p English support from the babel system
+ amsmath.sty    2013/01/14 v2.14 AMS math features
+ amstext.sty    2000/06/29 v2.01
+  amsgen.sty    1999/11/30 v2.0
+  amsbsy.sty    1999/11/29 v1.2d
+  amsopn.sty    1999/12/14 v2.01 operator names
+amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
+  amsthm.sty    2009/07/02 v2.20.1
+MnSymbol.sty    2007/01/21 v1.4 support for the MnSymbol font
+MinionPro.sty    2007/03/15 v2.1 MinionPro support for LaTeX
+MinionPro-FontDef.sty    2007/02/01 v2.2 font definition macros
+otfontdef.sty    2005/06/04 v0.1e OpenType font definition
+fontaxes.sty    2007/03/31 v0.2b Font selection axes
+t1minionpro-lf.fd
+MinionPro-FontDef.sty    2007/02/01 v2.2 font definition macros
+ sectsty.sty    2002/02/25 v2.0.2 Commands to change all sectional heading styl
+es
+inputenc.sty    2014/04/30 v1.2b Input encoding file
+    utf8.def    2014/09/29 v1.1m UTF-8 support for inputenc
+   t1enc.dfu    2014/09/29 v1.1m UTF-8 support for inputenc
+  ot1enc.dfu    2014/09/29 v1.1m UTF-8 support for inputenc
+  omsenc.dfu    2014/09/29 v1.1m UTF-8 support for inputenc
+  ts1enc.dfu    2014/09/29 v1.1m UTF-8 support for inputenc
+hyperref.sty    2012/11/06 v6.83m Hypertext links for LaTeX
+hobsub-hyperref.sty    2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+hobsub-generic.sty    2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+  hobsub.sty    2012/05/28 v1.13 Construct package bundles (HO)
+infwarerr.sty    2010/04/08 v1.3 Providing info/warning/error messages (HO)
+ ltxcmds.sty    2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+ifluatex.sty    2010/03/01 v1.3 Provides the ifluatex switch (HO)
+  ifvtex.sty    2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+ intcalc.sty    2007/09/27 v1.1 Expandable calculations with integers (HO)
+   ifpdf.sty    2011/01/30 v2.3 Provides the ifpdf switch (HO)
+etexcmds.sty    2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+kvsetkeys.sty    2012/04/25 v1.16 Key value parser (HO)
+kvdefinekeys.sty    2011/04/07 v1.3 Define keys (HO)
+pdftexcmds.sty    2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+pdfescape.sty    2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+bigintcalc.sty    2012/04/08 v1.3 Expandable calculations on big integers (HO)
+  bitset.sty    2011/01/30 v1.1 Handle bit-vector datatype (HO)
+uniquecounter.sty    2011/01/30 v1.2 Provide unlimited unique counter (HO)
+letltxmacro.sty    2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+ hopatch.sty    2012/05/28 v1.2 Wrapper for package hooks (HO)
+xcolor-patch.sty    2011/01/30 xcolor patch
+atveryend.sty    2011/06/30 v1.8 Hooks at the very end of document (HO)
+atbegshi.sty    2011/10/05 v1.16 At begin shipout hook (HO)
+refcount.sty    2011/10/16 v3.4 Data extraction from label references (HO)
+ hycolor.sty    2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+ ifxetex.sty    2010/09/12 v0.6 Provides ifxetex conditional
+ auxhook.sty    2011/03/04 v1.3 Hooks for auxiliary files (HO)
+kvoptions.sty    2011/06/30 v3.11 Key value format for package options (HO)
+  pd1enc.def    2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+hyperref.cfg    2002/06/06 v1.2 hyperref configuration of TeXLive
+     url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
+ hpdftex.def    2012/11/06 v6.83m Hyperref driver for pdfTeX
+rerunfilecheck.sty    2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+omlminionpro-tosf.fd
+MinionPro-FontDef.sty    2007/02/01 v2.2 font definition macros
+ fmlfutm.fd    2004/10/30 Fontinst v1.926 font definitions for FML/futm.
+    umsa.fd    2013/01/14 v3.01 AMS symbols A
+    umsb.fd    2013/01/14 v3.01 AMS symbols B
+  t1cmtt.fd    2014/09/29 v2.5h Standard LaTeX font definitions
+  t1cmss.fd    2014/09/29 v2.5h Standard LaTeX font definitions
+        .
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 41.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 41.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fourier/fmsfutm.fd
+File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
+)
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 41.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 41.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fourier/fmxfutm.fd
+File: fmxfutm.fd futm-extension
+)
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 41.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+
+(/Volumes/Aquamacs Emacs/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-mod
+es/auctex/latex/preview.sty
+Package: preview 2010/02/14 11.88 (AUCTeX/preview-latex)
+
+(/Volumes/Aquamacs Emacs/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-mod
+es/auctex/latex/prtightpage.def
+\PreviewBorder=\dimen119
+)
+(/Volumes/Aquamacs Emacs/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-mod
+es/auctex/latex/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count114
+\hfuzz=\dimen120
+
+(/Volumes/Aquamacs Emacs/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-mod
+es/auctex/latex/prauctex.cfg))
+(/Volumes/Aquamacs Emacs/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-mod
+es/auctex/latex/prfootnotes.def)
+\pr@snippet=\count115
+\pr@box=\box29
+\pr@output=\toks28
+
+Preview: Fontsize 10.95pt
+Preview: PDFoutput 1
+)
+\AtBeginShipoutBox=\box30
+Package hyperref Info: Link coloring OFF on input line 41.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count116
+)
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
+
+ !name(Aflevering1.tex) !offset(-3) 
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 47.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 47.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 47.
+
+! Preview: Snippet 1 started.
+<-><->
+      
+l.52 \section
+             {Karakterisering af et mål}
+Not a real error.
+
+Preview: Tightpage -32891 -32891 32891 32891
+! Preview: Snippet 1 ended.(632291+8964x27410796).
+<-><->
+      
+l.52 \section{Karakterisering af et mål}
+                                         
+Not a real error.
+
+[1{/Users/rudfaden/Library/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdfte
+x.map}
+
+]
+! Preview: Snippet 2 started.
+<-><->
+      
+l.54 \paragraph
+               {Spørgsmål 1}
+Not a real error.
+
+! Preview: Snippet 2 ended.(480804+31575x3822031).
+<-><->
+      
+l.54 \paragraph{Spørgsmål 1}
+                              
+Not a real error.
+
+[2
+
+]
+! Preview: Snippet 3 started.
+<-><->
+      
+l.55 Lad \(
+           f\) være en function fra \(\mathbb{R}^2-\mathbb{R}_+ \rightarrow...
+
+Not a real error.
+
+! Preview: Snippet 3 ended.(519196+183351x411195).
+<-><->
+      
+l.55 Lad \(f\)
+               være en function fra \(\mathbb{R}^2-\mathbb{R}_+ \rightarrow...
+
+Not a real error.
+
+[3]
+! Preview: Snippet 4 started.
+<-><->
+      
+l.55 Lad \(f\) være en function fra \(
+                                       \mathbb{R}^2-\mathbb{R}_+ \rightarrow...
+
+Not a real error.
+
+! Preview: Snippet 4 ended.(621713+107642x3428682).
+<-><->
+      
+l.55 ...R}^2-\mathbb{R}_+ \rightarrow \mathbb{R}\)
+                                                   defineret som
+Not a real error.
+
+[4]
+! Preview: Snippet 5 started.
+<-><->
+      
+l.56 \[
+       
+Not a real error.
+
+! Preview: Snippet 5 ended.(725419+0x15782876).
+<-><->
+      
+l.58 \]
+       
+Not a real error.
+
+[5]
+! Preview: Snippet 6 started.
+<-><->
+      
+l.59 Normen \(
+              \| x\| \) er altid kontinuer og da det er antaget at \(\omega\...
+
+Not a real error.
+
+! Preview: Snippet 6 ended.(542068+175375x1035286).
+<-><->
+      
+l.59 Normen \(\| x\| \)
+                        er altid kontinuer og da det er antaget at \(\omega\...
+
+Not a real error.
+
+[6]
+! Preview: Snippet 7 started.
+<-><->
+      
+l.59 ...altid kontinuer og da det er antaget at \(
+                                                  \omega\) også er kontinue...
+
+Not a real error.
+
+! Preview: Snippet 7 ended.(340510+12199x486546).
+<-><->
+      
+l.59 ...ntinuer og da det er antaget at \(\omega\)
+                                                   også er kontinuer på \(...
+
+Not a real error.
+
+[7]
+! Preview: Snippet 8 started.
+<-><->
+      
+l.59 ...et at \(\omega\) også er kontinuer på \(
+                                                  \mathbb{R}^2\setminus(\{x_...
+
+Not a real error.
+
+! Preview: Snippet 8 ended.(621713+175375x5874697).
+<-><->
+      
+l.59 ...{R}^2\setminus(\{x_1,0\})\mid x_1 \geq 0\)
+                                                  , da er \(f\) kontinuer. V...
+
+Not a real error.
+
+[8]
+! Preview: Snippet 9 started.
+<-><->
+      
+l.59 ...inus(\{x_1,0\})\mid x_1 \geq 0\), da er \(
+                                                  f\) kontinuer. Vi skal nu ...
+
+Not a real error.
+
+! Preview: Snippet 9 ended.(519196+183351x411195).
+<-><->
+      
+l.59 ...s(\{x_1,0\})\mid x_1 \geq 0\), da er \(f\)
+                                                   kontinuer. Vi skal nu vis...
+
+Not a real error.
+
+[9]
+! Preview: Snippet 10 started.
+<-><->
+      
+l.59 ...kal nu vise at det inverse billedrum af \(
+                                                  f\)
+Not a real error.
+
+! Preview: Snippet 10 ended.(519196+183351x411195).
+<-><->
+      
+l.59 ... nu vise at det inverse billedrum af \(f\)
+                                                  
+Not a real error.
+
+[10]
+! Preview: Snippet 11 started.
+<-><->
+      
+l.60 \[
+       
+Not a real error.
+
+! Preview: Snippet 11 ended.(840945+0x16063518).
+<-><->
+      
+l.62 \]
+       
+Not a real error.
+
+[11]
+! Preview: Snippet 12 started.
+<-><->
+      
+l.63 er lukket. Men \(
+                      f\) er kontinuer.  Og en funktion er kontinuer hvis og...
+
+Not a real error.
+
+! Preview: Snippet 12 ended.(519196+183351x411195).
+<-><->
+      
+l.63 er lukket. Men \(f\)
+                          er kontinuer.  Og en funktion er kontinuer hvis og...
+
+Not a real error.
+
+[12]
+! Preview: Snippet 13 started.
+<-><->
+      
+l.63 ...�ngde er afsluttet. Heraf følger af at \(
+                                                  B\) er en afluttet mængde.
+Not a real error.
+
+! Preview: Snippet 13 ended.(485110+0x444206).
+<-><->
+      
+l.63 ...de er afsluttet. Heraf følger af at \(B\)
+                                                   er en afluttet mængde.
+Not a real error.
+
+[13]
+! Preview: Snippet 14 started.
+<-><->
+      
+l.65 \(
+       \mathbb{D}\) er defineret som en delmængde af \(\mathbb{R}^2\). Da B...
+
+Not a real error.
+
+! Preview: Snippet 14 ended.(457524+0x470068).
+<-><->
+      
+l.65 \(\mathbb{D}\)
+                    er defineret som en delmængde af \(\mathbb{R}^2\). Da B...
+
+Not a real error.
+
+[14]
+! Preview: Snippet 15 started.
+<-><->
+      
+l.65 ...{D}\) er defineret som en delmængde af \(
+                                                  \mathbb{R}^2\). Da Borel a...
+
+Not a real error.
+
+! Preview: Snippet 15 ended.(621713+0x722761).
+<-><->
+      
+l.65 ...eret som en delmængde af \(\mathbb{R}^2\)
+                                                  . Da Borel algebraen på \...
+
+Not a real error.
+
+[15]
+! Preview: Snippet 16 started.
+<-><->
+      
+l.65 ...(\mathbb{R}^2\). Da Borel algebraen på \(
+                                                  \mathbb{R}^2\) er \(\mathb...
+
+Not a real error.
+
+! Preview: Snippet 16 ended.(621713+0x722761).
+<-><->
+      
+l.65 ...). Da Borel algebraen på \(\mathbb{R}^2\)
+                                                   er \(\mathbb{B}_2\), da f...
+
+Not a real error.
+
+[16]
+! Preview: Snippet 17 started.
+<-><->
+      
+l.65 ...Borel algebraen på \(\mathbb{R}^2\) er \(
+                                                  \mathbb{B}_2\), da følger...
+
+Not a real error.
+
+! Preview: Snippet 17 ended.(458184+107642x722761).
+<-><->
+      
+l.65 ...n på \(\mathbb{R}^2\) er \(\mathbb{B}_2\)
+                                                  , da følger at \(\mathbb{...
+
+Not a real error.
+
+[17]
+! Preview: Snippet 18 started.
+<-><->
+      
+l.65 ...^2\) er \(\mathbb{B}_2\), da følger at \(
+                                                  \mathbb{D}\subset\mathbb{B...
+
+Not a real error.
+
+! Preview: Snippet 18 ended.(458184+107642x1831920).
+<-><->
+      
+l.65 ...�lger at \(\mathbb{D}\subset\mathbb{B}_2\)
+                                                  
+Not a real error.
+
+[18]
+! Preview: Snippet 19 started.
+<-><->
+      
+l.67 \paragraph
+               {Spørgsmål 2} Lad \(I\) være et indekserings set. Lad
+Not a real error.
+
+! Preview: Snippet 19 ended.(480804+31575x3913168).
+<-><->
+      
+l.67 \paragraph{Spørgsmål 2}
+                               Lad \(I\) være et indekserings set. Lad
+Not a real error.
+
+[19
+
+]
+! Preview: Snippet 20 started.
+<-><->
+      
+l.67 \paragraph{Spørgsmål 2} Lad \(
+                                     I\) være et indekserings set. Lad
+Not a real error.
+
+! Preview: Snippet 20 ended.(485110+0x287047).
+<-><->
+      
+l.67 \paragraph{Spørgsmål 2} Lad \(I\)
+                                         være et indekserings set. Lad
+Not a real error.
+
+[20]
+! Preview: Snippet 21 started.
+<-><->
+      
+l.68 \begin{align}
+                  
+Not a real error.
+
+! Preview: Snippet 21 ended.(1395636+0x27410796).
+<-><->
+      
+l.70 \end{align}
+                
+Not a real error.
+
+[21
+
+]
+! Preview: Snippet 22 started.
+<-><->
+      
+l.72 Definer et nyt set \(
+                          \mathbb{A}\) som mængden af elementer der ikke er...
+
+Not a real error.
+
+! Preview: Snippet 22 ended.(456864+660x506379).
+<-><->
+      
+l.72 Definer et nyt set \(\mathbb{A}\)
+                                       som mængden af elementer der ikke er...
+
+Not a real error.
+
+[22]
+! Preview: Snippet 23 started.
+<-><->
+      
+l.72 ... tomme mængde eller mængden givet ved \(
+                                                  B(\theta,\eta,r,R)\left\{x...
+
+Not a real error.
+
+! Preview: Snippet 23 ended.(640835+274851x13739410).
+<-><->
+      
+l.72 ...eta,\eta], \| x\|_2 \notin [r,R]\right\}\)
+                                                  , for \(0\leq\theta \leq \...
+
+Not a real error.
+
+[23]
+! Preview: Snippet 24 started.
+<-><->
+      
+l.72 ...], \| x\|_2 \notin [r,R]\right\}\), for \(
+                                                  0\leq\theta \leq \eta <2\p...
+
+Not a real error.
+
+! Preview: Snippet 24 ended.(519196+183351x3822548).
+<-><->
+      
+l.72 ...t\}\), for \(0\leq\theta \leq \eta <2\pi\)
+                                                   og \(R\geq r>0\).
+Not a real error.
+
+[24]
+! Preview: Snippet 25 started.
+<-><->
+      
+l.72 ... for \(0\leq\theta \leq \eta <2\pi\) og \(
+                                                  R\geq r>0\).
+Not a real error.
+
+! Preview: Snippet 25 ended.(485110+22630x2393360).
+<-><->
+      
+l.72 ...q\theta \leq \eta <2\pi\) og \(R\geq r>0\)
+                                                  .
+Not a real error.
+
+[25]
+! Preview: Snippet 26 started.
+<-><->
+      
+l.74 	Da har vi at \(
+                     \mathbb{A}=\bigcup_{i\in I}A_i\) og at \(\mathbb{A}^c=\...
+
+Not a real error.
+
+! Preview: Snippet 26 ended.(485110+142547x3194079).
+<-><->
+      
+l.74 ...r vi at \(\mathbb{A}=\bigcup_{i\in I}A_i\)
+                                                   og at \(\mathbb{A}^c=\mat...
+
+Not a real error.
+
+[26]
+! Preview: Snippet 27 started.
+<-><->
+      
+l.74 ...(\mathbb{A}=\bigcup_{i\in I}A_i\) og at \(
+                                                  \mathbb{A}^c=\mathbb{D}\)....
+
+Not a real error.
+
+! Preview: Snippet 27 ended.(532233+660x1888731).
+<-><->
+      
+l.74 ... I}A_i\) og at \(\mathbb{A}^c=\mathbb{D}\)
+                                                  . Derved følger at \(\mat...
+
+Not a real error.
+
+[27]
+! Preview: Snippet 28 started.
+<-><->
+      
+l.74 ...bb{A}^c=\mathbb{D}\). Derved følger at \(
+                                                  \mathbb{A}^c=\left( \bigcu...
+
+Not a real error.
+
+! Preview: Snippet 28 ended.(595836+229478x9803170).
+<-><->
+      
+l.74 ...in I}A_i^c=\bigcap_{i\in I}\mathcal{D}_i\)
+                                                  
+Not a real error.
+
+[28]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 77.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
+ ) 
+Here is how much of TeX's memory you used:
+ 498 strings out of 483037
+ 9266 string characters out of 5982712
+ 253029 words of memory out of 5000000
+ 13807 multiletter control sequences out of 15000+600000
+ 344252 words of font info for 141 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 32i,11n,33p,341b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/Users/rudfaden/Library/texmf/fonts/enc/dvips/MnSymbol/MnSymbolS.enc}{/Users
+/rudfaden/Library/texmf/fonts/enc/dvips/MnSymbol/MnSymbolD.enc}{/Users/rudfaden
+/Library/texmf/fonts/enc/dvips/MnSymbol/MnSymbolF.enc}{/Users/rudfaden/Library/
+texmf/fonts/enc/dvips/MinionPro/base-MinionPro-ae.enc}{/Users/rudfaden/Library/
+texmf/fonts/enc/dvips/MnSymbol/MnSymbolE.enc}{/Users/rudfaden/Library/texmf/fon
+ts/enc/dvips/MnSymbol/MnSymbolA.enc}{/Users/rudfaden/Library/texmf/fonts/enc/dv
+ips/MnSymbol/MnSymbolC.enc}{/Users/rudfaden/Library/texmf/fonts/enc/dvips/Minio
+nPro/base-MinionPro-aa.enc}{/Users/rudfaden/Library/texmf/fonts/enc/dvips/Minio
+nPro/base-MinionPro-ac.enc}</Users/rudfaden/Library/texmf/fonts/type1/adobe/Min
+ionPro/MinionPro-It.pfb></Users/rudfaden/Library/texmf/fonts/type1/adobe/Minion
+Pro/MinionPro-Regular.pfb></Users/rudfaden/Library/texmf/fonts/type1/public/MnS
+ymbol/MnSymbol10.pfb></Users/rudfaden/Library/texmf/fonts/type1/public/MnSymbol
+/MnSymbol8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/fourier/f
+ourier-bb.pfb>
+Output written on _region_.pdf (28 pages, 140382 bytes).
+PDF statistics:
+ 147 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
+ 4 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

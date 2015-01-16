@@ -1,0 +1,7 @@
+% -*- root: ../root.tex -*-
+\begin{tikzpicture}[x=1cm,y=10cm]
+	\draw[very thick, ->] (-0.2,0) -- (15,0)node[right]{\(x\)} ;
+	\draw[very thick, ->] (0,-0.02) -- (0,1)node[above]{\(y\)} ;
+
+	\draw[scale=1,domain=0:15,smooth,variable=\x,blue] plot ({\x},{1-1/(1+ln(\x+1))});
+\end{tikzpicture}

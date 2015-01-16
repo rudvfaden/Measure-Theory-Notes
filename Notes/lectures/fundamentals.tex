@@ -99,4 +99,28 @@ see book page 11.
 \begin{rem}
   As the borel algrebra \(\B\) is a \(\sigal\) which is stabel under the formation of complements, \(\B\) is also the \(sigal\) generated on the closed sets.
 \end{rem}
+\subsection{Important distributions} % (fold)
+\label{sub:important_distrLJibutions}
+\begin{table}
+  \setlength\extrarowheight{10pt}
+  \begin{tabular}{ >{$}l<{$}  >{$}l<{$} | >{$}l<{$}  >{$}l<{$}  }
+  \toprule
+    \text{Distributions}    & Continues                                                                                                                                                 & Discrete\tabularnewline
+    \midrule
+    \text{Uniform}          & \displaystyle\frac{1}{\beta}, \text{ for } x\in(\alpha,\alpha+\beta)                                                                                      & \text{Bionomial} & \displaystyle \begin{pmatrix} n \\ x\end{pmatrix}p^x(1-p)^{n-x} \tabularnewline
+    \text{Exponential}      &\displaystyle \frac{1}{\beta}e^{-x/\beta}                                                                                                                  & \text{H-gemometric}& \displaystyle \begin{pmatrix}N_1 \\ x \end{pmatrix}\begin{pmatrix}N-N_1 \\ n-x \end{pmatrix}\Biggm/\begin{pmatrix} N \\N \end{pmatrix} \tabularnewline
+    \text{Cauchy}           & \displaystyle\frac{1}{\pi(1+x^2)}                                                                                                                         & \text{Poisson} & \displaystyle\frac{\lambda^x}{x!}e^{-\lambda}\tabularnewline
+    \text{Normal}           & \displaystyle\frac{1}{\sqrt{2\pi}}e^{-(x-\xi)^2/2\sigma^2}                                                                                                & &\tabularnewline
+    \text{Gamma } \Gamma & \displaystyle\frac{1}{\beta^\lambda\Gamma(\lambda)}x^{1-\lambda}e^{-x/\beta}                                                                                 & &\tabularnewline
+    \text{Beta}             & \displaystyle\frac{1}{\lambda_1,\lambda_2}x^{\lambda_1-1}(1-)^{\lambda_2-1}                                                                               & &\tabularnewline
+    \text{F}                & \displaystyle\frac{\lambda_1^{\lambda_1}\lambda_2^{\lambda_2}}{B(\lambda_1,\lambda_2)}\frac{x^{\lambda_1-1}}{(\lambda_1x+\lambda_2)^{\lambda_+\lambda_2}} & &\tabularnewline
+    \text{T}                & \displaystyle\frac{1}{\sqrt{2\lambda}B(\lambda,\frac{1}{2})}\frac{1}{\left(1+\frac{x^2}{2\lambda}\right)^{\lambda+1/2}}                                   & &\tabularnewline
+
+    \bottomrule
+  \end{tabular}
+  \caption{distributions}
+  \label{tbl:label}
+\end{table}
+
+% subsection important_distributions (end)
 % subsubsection borel_sigma_algebra (end)

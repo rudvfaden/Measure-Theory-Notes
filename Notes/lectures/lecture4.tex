@@ -1,0 +1,45 @@
+% -*- root: ../root.tex -*-
+\section[Lecture 4]{Image measures} % (fold)
+\label{sec:image_measures}
+\begin{defn}[Image measure]
+For two measurable spavces \((\X,\E)\)  with measure \(\mu\) and \(\Y,\K\). The \important{image measure} \(t(\mu)\), as the measure on \(\Y,\K\) is given by
+\begin{align}
+    t(\mu)=\mu\left(t^{-1}(B)\right)
+\end{align}
+\end{defn}
+\subsection{Intergration with respect ot image measures} % (fold)
+\label{sub:intergration_with_respect_ot_image_measures}
+\begin{defn}[\index{Abstract-change-of-variable formula}Abstract-change-of-variable formula]
+Let \(\X,\E,\mu\) be a measure space and let \((\Y,\K)\)  be a measurable space, and let \(t: \X\longrightarrow\Y\) be \(\E-\K\) measurable. For every function \(g\in\M^+(\Y,\K)\) it holds that
+\begin{equation}
+      \int g \dif t(\mu)=\int g\circ t \dif \mu
+\end{equation}
+\end{defn}
+\begin{rem}
+The above also holds for real-valued functions, but we have to make sure that the \(g\) function is \(t(\mu)\)-integrable. This holds iff \(g\circ t\)  is \(t(\mu)\)-integrable. See Collary 10.9 in EH.
+\end{rem}
+% subsection intergration_with_respect_ot_image_measures (end)
+\subsection{Translation invariance} % (fold)
+\label{sub:translation_invariance}
+\begin{defn}
+	A \important{translation} in \(\R^k\) is a map \(\R^k \longrightarrow \R^k\) of the form
+	\begin{align}
+	    \tau(x)=x+w\, \forall \, x\in\R^k
+	\end{align}
+	for fixed \(w\in\R^k\)
+\end{defn}
+
+A map is \important{translation invariant} if
+\begin{align}
+    \tau_w(\mu)=\mu \text{ for every choice of } w\in\R^k
+\end{align}
+
+\begin{rem}
+Intuativly it does translation invariance means that the measure is determined by the shape of the set and not where it is located in \(\R^k\)
+\end{rem}
+\begin{rem}
+The lebesque measure is translation invariant. See EH theorem 10.11
+\end{rem}
+% subsection translation_invariance (end)
+
+% section image_measures (end)
